@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JogoAdivinha</string>
+    <string name="qual_n_mero_que_estou_a_pensar_entre_1_e_10">Qual número que estou a pensar?(entre 1 e 10)</string>
+    <string name="n_mero">Número</string>
+    <string name="button">Button</string>
+    <string name="o_numero_que_estou_a_pensar">O numero que estou a pensar é:</string>
+    <string name="tentativas_restantes">Tentativas Restantes:</string>
+</resources>
