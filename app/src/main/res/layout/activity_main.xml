@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -32,38 +32,39 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
-            android:hint="@string/n_mero" />
+            android:hint="@string/n_mero"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonAdivinha"
+        android:layout_width="93dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:onClick="enviarNumero"
         android:text="@string/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewTentativas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/o_numero_que_estou_a_pensar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        android:text="@string/tentativas_restantes"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdivinha" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewFeedBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="@string/tentativas_restantes"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:hint="@string/parab_ns_acertou"
+        android:textColor="#673AB7"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdivinha"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdivinha"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTentativas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

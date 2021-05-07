@@ -5,4 +5,8 @@
     <string name="button">Button</string>
     <string name="o_numero_que_estou_a_pensar">O numero que estou a pensar é:</string>
     <string name="tentativas_restantes">Tentativas Restantes:</string>
+    <string name="parab_ns_acertou">Parabéns, acertou.</string>
+    <string name="adivinha" />
+    <string name="numero_maior">O numero é maior que o desejado</string>
+    <string name="numero_menor">O numero é menor que o desejado</string>
 </resources>
